@@ -1,0 +1,5 @@
+name = "project1"
+type = "javascript"
+account_id = "3b636fc406db4dc7c7288111eeec672b"
+workers_dev = true
+
