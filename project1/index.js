@@ -1,14 +1,9 @@
 let jsondata;
 fetch('https://cfw-takehome.developers.workers.dev/api/variants')
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-    })
-    .then(function (json) {
-        jsondata = json;
-    })
+   .then(resp => resp.json())
+   .then(resp => {
+        jsondata = resp;
+   });
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
